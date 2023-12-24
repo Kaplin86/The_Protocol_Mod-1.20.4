@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "the-protocol",
+	"version": "${version}",
+	"name": "The Protocol",
+	"description": "CHURCH OF THE REDSTONE",
+	"authors": [
+		"THE PASTOR"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/the-protocol/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.morselsmarsh.theprotocol.TheProtocol"
+		],
+		"client": [
+			"com.morselsmarsh.theprotocol.TheProtocolClient"
+		],
+		"fabric-datagen": [
+			"com.morselsmarsh.theprotocol.TheProtocolDataGenerator"
+		]
+	},
+	"mixins": [
+		"the-protocol.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
